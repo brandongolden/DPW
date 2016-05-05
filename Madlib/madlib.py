@@ -14,7 +14,6 @@ tvshows = {story[0]:"The Apprentice", story[1]:"The Tonight Show"}
 
 trump_wallet = int(story[2]) * 100000
 fallon_wallet = int(story[3]) * 100000
-wallet = int(story[4]) * 50 - 50
 
 if trump_wallet > fallon_wallet:
 	a = "Donald Trump is willing to pay more than Jimmy Fallon for you to guest star in his TV show. "
@@ -28,5 +27,9 @@ if fav_tvshow == tvshows[story[0]]:
 elif fav_tvshow == tvshows[story[1]]:
 	b = "Jimmy Fallon and you have something in common."
 
-print a
-print b
+def story_sentence(y, z):
+	make_sentence = "Hi " + y + "!" + " The " + z + " socks you are wearing defiantly wont go unnoticed."
+	return make_sentence
+
+d = story_sentence(first_name, fav_color);
+#print d
