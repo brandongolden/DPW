@@ -12,6 +12,21 @@ for i in range(0,3):
 tvshows = dict()
 tvshows = {story[0]:"The Apprentice", story[1]:"The Tonight Show"}
 
-trump_wallet = story[2] * 1000000
-fallon_wallet = story[3] * 100000
-wallet = story[4] * 100 - 50
+trump_wallet = int(story[2]) * 100000
+fallon_wallet = int(story[3]) * 100000
+wallet = int(story[4]) * 50 - 50
+
+if trump_wallet > fallon_wallet:
+	a = "Donald Trump is willing to pay more than Jimmy Fallon for you to guest star in his TV show. "
+elif fallon_wallet > trump_wallet:
+	a = "Jimmy Fallon is willing to pay more than Donald Trump for you to guest star in his TV show. "
+else:
+	a = "Both Donald Trump and Jimmy Fallon have offered to pay $" + str(trump_wallet) + " for you to guest star in their TV show."
+
+if fav_tvshow == tvshows[story[0]]:
+	b = "Donald Trump and you have something in common."
+elif fav_tvshow == tvshows[story[1]]:
+	b = "Jimmy Fallon and you have something in common."
+
+print a
+print b
