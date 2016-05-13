@@ -57,6 +57,24 @@ class MainHandler(webapp2.RequestHandler):
                 self.response.write(page_head + model + ' ' + guitar_company + page_close)
             else:
                 self.response.write(page_head + page_body + page_close)
+
+class view(MainHandler):
+    def __init__(self):
+        page = '''
+		<DOCTYPE HTML>
+		<html>
+		<head>
+		<title>The View</title>
+		</head>
+		<body>
+
+		</body>
+		</html>
+		'''
+
+
+
+
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
 ], debug=True)
