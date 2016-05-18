@@ -5,8 +5,8 @@ from page import ResultsPage
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        f = FormPage() #Create instance of FormPage class
-        r = ResultsPage() #Create instance of ResultsPage class
+        f = FormPage()  # Create instance of FormPage class
+        r = ResultsPage()  # Create instance of ResultsPage class
 
 
 
@@ -19,9 +19,14 @@ class MainHandler(webapp2.RequestHandler):
             s = Simoleons(self.request.GET['simoleons'])
             sim = Sim(self.request.GET['simName'], self.request.GET['hairColor'])
 
+            page = '''
+            {sim.name}<br>
+            {sim.hair}<br>
+            {s.simoleons}
+            '''
 
-
-            self.response.write(sim.name + sim.hair + str(s.simoleons))
+            page = page.format(**locals())
+            self.response.write(r.header + page + r.footer)
 
         else:
             self.response.write(f.form)

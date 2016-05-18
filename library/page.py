@@ -1,4 +1,4 @@
-class FormPage():
+class FormPage(object):
     def __init__(self):
         self.form = '''<!DOCTYPE>
         <html>
@@ -32,14 +32,17 @@ class FormPage():
         '''
 
 
-class ResultsPage():
+class ResultsPage(object):
     def __init__(self):
-        self.results = '''<!DOCTYPE>
+        self.header = '''<!DOCTYPE>
         <html>
         <head>
             <title>Results</title>
         </head>
         <body>
+        '''
+
+        self.footer = '''
         </body>
         </html>
         '''
