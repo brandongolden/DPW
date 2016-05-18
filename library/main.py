@@ -10,8 +10,19 @@ class MainHandler(webapp2.RequestHandler):
 
 
 
+
+
+
+
+
         if self.request.GET:
-            self.response.write('Form sent')
+            s = Simoleons(self.request.GET['simoleons'])
+            sim = Sim(self.request.GET['simName'], self.request.GET['hairColor'])
+
+
+
+            self.response.write(sim.name + sim.hair + str(s.simoleons))
+
         else:
             self.response.write(f.form)
 

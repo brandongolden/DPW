@@ -34,4 +34,12 @@ class FormPage():
 
 class ResultsPage():
     def __init__(self):
-        pass
+        self.results = '''<!DOCTYPE>
+        <html>
+        <head>
+            <title>Results</title>
+        </head>
+        <body>
+        </body>
+        </html>
+        '''
