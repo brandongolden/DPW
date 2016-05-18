@@ -12,13 +12,15 @@ class MainHandler(webapp2.RequestHandler):
 
         if self.request.GET:
             s = Simoleons(self.request.GET['simoleons'])
-            sim = Sim(self.request.GET['simName'], self.request.GET['hairColor'])
+            sim = Sim(self.request.GET['simName'], self.request.GET['hairColor'], self.request.GET['eyeColor'])
 
             page = '''
-            {sim.name}<br>
-            {sim.hair}<br>
-            <img src="img/{sim.hair}.jpg">
-            {s.simoleons}
+            Sim Name: {sim.name}<br>
+            Hair Color: {sim.hair}<br>
+            <img src="img/{sim.hair}.jpg"><br>
+            Simoleons: {s.simoleons}<br>
+            Eye Color: {sim.eyes}<br>
+            <img src="img/{sim.eyes}.png">
             '''
 
             page = page.format(**locals())

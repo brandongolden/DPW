@@ -1,6 +1,6 @@
 class Simoleons(object):
     def __init__(self, simoleons):
-        self._simoleons = int(simoleons) + int(2)
+        self._simoleons = int(simoleons) * int(100)
 
     @property
     def simoleons(self):
@@ -11,9 +11,10 @@ class Simoleons(object):
         self._simoleons = value
 
 class Sim(object):
-    def __init__(self, name, hair):
+    def __init__(self, name, hair, eyes):
         self._name = name
         self._hair = hair
+        self._eyes = eyes
 
         if self._hair == "1":
             self._hair = "Blonde"
@@ -29,6 +30,17 @@ class Sim(object):
             self._hair = "Light Blonde"
         elif self._hair == "7":
             self._hair = "Grey"
+
+        if self._eyes == "1":
+            self._eyes = "Dark Blue"
+        elif self._eyes == "2":
+            self._eyes = "Light Blue"
+        elif self._eyes == "3":
+            self._eyes = "Green"
+        elif self._eyes == "4":
+            self._eyes = "Grey"
+        elif self._eyes == "5":
+            self._eyes = "Brown"
 
     @property
     def name(self):
@@ -46,3 +58,12 @@ class Sim(object):
     @hair.setter
     def hair(self, value):
         self._hair = value
+
+
+    @property
+    def eyes(self):
+        return self._eyes
+
+    @eyes.setter
+    def eyes(self, value):
+        self._eyes = value
