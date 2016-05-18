@@ -15,6 +15,21 @@ class Sim(object):
         self._name = name
         self._hair = hair
 
+        if self._hair == "1":
+            self._hair = "Blonde"
+        elif self._hair == "2":
+            self._hair = "Chestnut"
+        elif self._hair == "3":
+            self._hair = "Brown"
+        elif self._hair == "4":
+            self._hair = "Red"
+        elif self._hair == "5":
+            self._hair = "Black"
+        elif self._hair == "6":
+            self._hair = "Light Blonde"
+        elif self._hair == "7":
+            self._hair = "Grey"
+
     @property
     def name(self):
         return self._name
@@ -22,6 +37,7 @@ class Sim(object):
     @name.setter
     def name(self, value):
         self._name = value
+
 
     @property
     def hair(self):
