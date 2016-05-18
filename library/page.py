@@ -59,7 +59,7 @@ class FormPage(object):
                 <option value="5">5</option>
             </select>
 
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit" class="submitButton">
             </form>
         </div>
         </body>
