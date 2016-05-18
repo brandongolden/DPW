@@ -4,9 +4,24 @@ class FormPage(object):
         <html>
         <head>
             <title>Form View</title>
+            <script>
+            function validateForm() {
+                var a = document.forms["form"]["simName"].value;
+                if (a == "") {
+                    alert("Sim Name is required");
+                    return false;
+                }
+
+                var b = document.forms["form"]["simoleons"].value
+                if (b == "") {
+                    alert("Number is required");
+                    return false;
+                }
+            }
+            </script>
         </head>
         <body>
-            <form method="GET" action="">
+            <form method="GET" action="" name="form" onsubmit="return validateForm()">
 
             <label for="simName">Sim Name: </label>
             <input type="text" name="simName">

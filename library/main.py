@@ -18,7 +18,7 @@ class MainHandler(webapp2.RequestHandler):
             Sim Name: {sim.name}<br>
             Hair Color: {sim.hair}<br>
             <img src="img/{sim.hair}.jpg"><br>
-            Simoleons: {s.simoleons}<br>
+            Simoleons: &sect;{s.simoleons}<br>
             Eye Color: {sim.eyes}<br>
             <img src="img/{sim.eyes}.png">
             '''
