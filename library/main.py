@@ -15,11 +15,11 @@ class MainHandler(webapp2.RequestHandler):
             sim = Sim(self.request.GET['simName'], self.request.GET['hairColor'], self.request.GET['eyeColor'])
 
             page = '''
-            Sim Name: {sim.name}<br>
-            Hair Color: {sim.hair}<br>
+            <b>Sim Name:</b> {sim.name}<br>
+            <b>Simoleons:</b> &sect;{s.simoleons}<br>
+            <b>Hair Color:</b> {sim.hair}<br>
             <img src="img/{sim.hair}.jpg"><br>
-            Simoleons: &sect;{s.simoleons}<br>
-            Eye Color: {sim.eyes}<br>
+            <b>Eye Color:</b> {sim.eyes}<br>
             <img src="img/{sim.eyes}.png">
             '''
 

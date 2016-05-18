@@ -1,4 +1,33 @@
 body {
-    background: #000;
+    background: #001752;
+    margin: 0 auto;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 15pt;
+}
+
+#form {
+    background: #fff;
+    color: #003880;
+    border: 3px solid #00D1FF;
+    width: 500px;
+    margin: 100px auto;
+    padding: 10px 10px;
+}
+
+input, select {
+    display: block;
+    margin-bottom: 4px;
+}
+
+input {
+    width: 100%;
+    height: 28px;
+}
+
+input[type=submit] {
+    background: #003880;
     color: #fff;
+    height: 32px;
+    border-radius: 5px;
+    border: 1px solid #003880;
 }

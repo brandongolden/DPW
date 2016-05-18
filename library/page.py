@@ -5,6 +5,7 @@ class FormPage(object):
         <head>
             <title>Sim Generator - Form</title>
             <link rel="stylesheet" type="text/css" href="main.css">
+            <link href='https://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
             <script>
             function validateForm() {
                 var a = document.forms["form"]["simName"].value;
@@ -22,6 +23,8 @@ class FormPage(object):
             </script>
         </head>
         <body>
+        <div id="form">
+            <img src="img/logo.png">
             <form method="GET" action="" name="form" onsubmit="return validateForm()">
 
             <label for="simName">Sim Name: </label>
@@ -52,6 +55,7 @@ class FormPage(object):
 
             <input type="submit" value="Submit">
             </form>
+        </div>
         </body>
         </html>
         '''
@@ -64,11 +68,14 @@ class ResultsPage(object):
         <head>
             <title>Sim Generator - Results</title>
             <link rel="stylesheet" type="text/css" href="main.css">
+            <link href='https://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
         </head>
         <body>
+        <div id="form">
         '''
 
         self.footer = '''
+        </div>
         </body>
         </html>
         '''
