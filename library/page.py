@@ -3,7 +3,8 @@ class FormPage(object):
         self.form = '''<!DOCTYPE>
         <html>
         <head>
-            <title>Form View</title>
+            <title>Sim Generator - Form</title>
+            <link rel="stylesheet" type="text/css" href="main.css">
             <script>
             function validateForm() {
                 var a = document.forms["form"]["simName"].value;
@@ -61,7 +62,8 @@ class ResultsPage(object):
         self.header = '''<!DOCTYPE>
         <html>
         <head>
-            <title>Results</title>
+            <title>Sim Generator - Results</title>
+            <link rel="stylesheet" type="text/css" href="main.css">
         </head>
         <body>
         '''
