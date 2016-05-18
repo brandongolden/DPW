@@ -6,6 +6,7 @@ Reusable Library
 """
 class Simoleons(object):
     def __init__(self, simoleons):
+        # Generate how many Simoleons the Sim has by multiplying the number the user entered by 100
         self._simoleons = int(simoleons) * int(100)
 
     @property
@@ -22,6 +23,7 @@ class Sim(object):
         self._hair = hair
         self._eyes = eyes
 
+        # Generate hair color using number chosen by user
         if self._hair == "1":
             self._hair = "Blonde"
         elif self._hair == "2":
@@ -37,6 +39,7 @@ class Sim(object):
         elif self._hair == "7":
             self._hair = "Grey"
 
+        # Generate eye color using number chosen by user
         if self._eyes == "1":
             self._eyes = "Dark Blue"
         elif self._eyes == "2":

@@ -6,6 +6,7 @@ Reusable Library
 """
 class FormPage(object):
     def __init__(self):
+        # html form page
         self.form = '''<!DOCTYPE>
         <html>
         <head>
@@ -69,6 +70,7 @@ class FormPage(object):
 
 class ResultsPage(object):
     def __init__(self):
+        # header of html results page
         self.header = '''<!DOCTYPE>
         <html>
         <head>
@@ -80,6 +82,7 @@ class ResultsPage(object):
         <div id="results">
         '''
 
+        # footer of html results page
         self.footer = '''
         </div>
         </body>
