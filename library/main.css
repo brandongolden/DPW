@@ -14,6 +14,16 @@ body {
     padding: 10px 10px;
 }
 
+#results {
+    background: #fff;
+    color: #003880;
+    border: 3px solid #00D1FF;
+    width: 500px;
+    height: 150px;
+    margin: 100px auto;
+    padding: 10px 10px;
+}
+
 input, select {
     display: block;
     margin-bottom: 4px;
@@ -30,4 +40,11 @@ input[type=submit] {
     height: 32px;
     border-radius: 5px;
     border: 1px solid #003880;
+}
+
+.box {
+    display: block;
+    width: 250px;
+    height: 50px;
+    float: left;
 }

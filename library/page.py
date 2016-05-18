@@ -77,7 +77,7 @@ class ResultsPage(object):
             <link href='https://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>
         </head>
         <body>
-        <div id="form">
+        <div id="results">
         '''
 
         self.footer = '''
