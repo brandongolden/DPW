@@ -1,3 +1,9 @@
+"""
+Brandon Golden
+DPW
+Reusable Library
+5/18/16
+"""
 class Simoleons(object):
     def __init__(self, simoleons):
         self._simoleons = int(simoleons) * int(100)
