@@ -55,8 +55,13 @@ class ContentPage(Page):
         # html body that will show when a GET request exists
         # local variables match chosen webhost
         self._webhost_body = '''
-        <h1>{self.plan}</h1>
-        Test
+        {self.company}
+        {self.plan}
+        {self.price}
+        {self.disk_space}
+        {self.bandwidth}
+        {self.control_panel}
+        {self.domains}
         '''
 
     # merge header, webhost_body and footer to make webpage for webhost
