@@ -43,8 +43,7 @@ class MainHandler(webapp2.RequestHandler):
                 self.response.write(c.make_page())
 
         else:
-            c.title = "Web Hosting"
-            self.response.write(c.make_page())
+            self.response.write(c.front_page())
 
 
 
