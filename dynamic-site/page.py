@@ -21,3 +21,7 @@ class Page(object):
         </body>
         </html>
         '''
+
+class ContentPage(Page):
+    def __init__(self):
+        super(ContentPage, self).__init__()

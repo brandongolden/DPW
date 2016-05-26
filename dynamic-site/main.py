@@ -12,6 +12,9 @@ class MainHandler(webapp2.RequestHandler):
     def get(self):
         if self.request.GET:
 
+            d = Data()
+            c = ContentPage()
+
             if self.request.GET["id"] == "1":
                 pass
             elif self.request.GET["id"] == "2":
