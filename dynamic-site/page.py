@@ -4,3 +4,20 @@ Brandon Golden
 DPW
 Dynamic Site
 '''
+
+class Page(object):
+    def __init__(self):
+        self.header = '''
+        <!DOCTYPE html>
+        <head>
+            <title>Dynamic Site</title>
+        </head>
+        <body>
+        '''
+
+        self.body = ""
+
+        self.footer = '''
+        </body>
+        </html>
+        '''
