@@ -7,17 +7,18 @@ Dynamic Site
 
 class Page(object):
     def __init__(self):
-        self.header = '''
+        self.__title = "Dynamic Site"
+        self.__header = '''
         <!DOCTYPE html>
         <head>
-            <title>Dynamic Site</title>
+            <title>{self.title}</title>
         </head>
         <body>
         '''
 
-        self.body = ""
+        self.__body = ""
 
-        self.footer = '''
+        self.__footer = '''
         </body>
         </html>
         '''

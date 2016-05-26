@@ -10,21 +10,41 @@ from page import *
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
+
+        d = Data()
+        c = ContentPage()
+
+
         if self.request.GET:
 
-            d = Data()
-            c = ContentPage()
-
             if self.request.GET["id"] == "1":
-                pass
+                webhost = d.dh
+                c.title = webhost.company
+                self.response.write(c.make_page())
+
             elif self.request.GET["id"] == "2":
-                pass
+                webhost = d.hg
+                c.title = webhost.company
+                self.response.write(c.make_page())
+
             elif self.request.GET["id"] == "3":
-                pass
+                webhost = d.s5
+                c.title = webhost.company
+                self.response.write(c.make_page())
+
             elif self.request.GET["id"] == "4":
-                pass
+                webhost = d.gd
+                c.title = webhost.company
+                self.response.write(c.make_page())
+
             elif self.request.GET['id'] == "5":
-                pass
+                webhost = d.sg
+                c.title = webhost.company
+                self.response.write(c.make_page())
+
+        else:
+            c.title = "Web Hosting"
+            self.response.write(c.make_page())
 
 
 
