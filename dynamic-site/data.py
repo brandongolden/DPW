@@ -8,6 +8,7 @@ Dynamic Site
 
 class WebHost(object):
     def __init__(self):
+        # Attributes
         self.company = ""
         self.logo_img = ""
         self.plan = ""
@@ -19,7 +20,7 @@ class WebHost(object):
 
 class Data(object):
     def __init__(self):
-        dh = WebHost()
+        dh = WebHost()  # Create instance of WebHost
         dh.company = "DreamHost"
         dh.logo_img = ""
         dh.plan = "Month-to-Month"
@@ -29,7 +30,7 @@ class Data(object):
         dh.control_panel = "DreamHost panel"
         dh.domains = "Unlimited"
 
-        hg = WebHost()
+        hg = WebHost()  # Create instance of WebHost
         hg.company = "HostGator"
         hg.logo_img = ""
         hg.plan = "Baby"
@@ -39,7 +40,7 @@ class Data(object):
         hg.control_panel = "cPanel"
         hg.domains = "Unlimited"
 
-        s5 = WebHost()
+        s5 = WebHost()  # Create instance of WebHost
         s5.company = "Site5"
         s5.logo_img = ""
         s5.plan = "hostPro"
@@ -49,7 +50,7 @@ class Data(object):
         s5.control_panel = "cPanel"
         s5.domains = "Unlimited"
 
-        gd = WebHost()
+        gd = WebHost()  # Create instance of WebHost
         gd.company = "GoDaddy"
         gd.logo_img = ""
         gd.plan = "Deluxe"
@@ -59,7 +60,7 @@ class Data(object):
         gd.control_panel = "cPanel"
         gd.domains = "Unlimited"
 
-        sg = WebHost()
+        sg = WebHost()  # Create instance of WebHost
         sg.company = "SiteGround"
         sg.logo_img = ""
         sg.plan = "GrowBig"
@@ -69,4 +70,5 @@ class Data(object):
         sg.control_panel = "cPanel"
         sg.domains = "Unlimited"
 
+        # Store data objects in array to make them easily accessible
         self.webhosts_array = [dh, hg, s5, gd, sg]
