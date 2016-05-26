@@ -24,13 +24,14 @@ class Page(object):
         '''
 
         self._footer = '''
+        <br>
+        &copy;2016 Brandon Golden
         </body>
         </html>
         '''
 
     def front_page(self):
         return self._header + self._body + self._footer
-
 
 
 
@@ -52,14 +53,8 @@ class ContentPage(Page):
         Test
         '''
 
-    @property
-    def webhost_body(self):
-        return self._webhost_body
-
-
-
     def make_page(self):
-        a = self._webhost_body
+        a = self._header + self._webhost_body + self._footer
         a = a.format(**locals())
         return a
 
