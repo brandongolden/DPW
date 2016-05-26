@@ -10,7 +10,20 @@ from page import *
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        self.response.write('Hello world!')
+        if self.request.GET:
+
+            if self.request.GET["id"] == "1":
+                pass
+            elif self.request.GET["id"] == "2":
+                pass
+            elif self.request.GET["id"] == "3":
+                pass
+            elif self.request.GET["id"] == "4":
+                pass
+            elif self.request.GET['id'] == "5":
+                pass
+
+
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
