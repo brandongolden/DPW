@@ -14,6 +14,7 @@ class Page(object):
         <!DOCTYPE html>
         <head>
             <title>Web Hosting</title>
+            <link rel="stylesheet" href="main.css">
         </head>
         <body>
         '''
