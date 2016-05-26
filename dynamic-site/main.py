@@ -16,30 +16,63 @@ class MainHandler(webapp2.RequestHandler):
         p = Page()
 
         if self.request.GET:
+            webhost = self.request.GET['webhost']
 
-            if self.request.GET["id"] == "1":
-                webhost = d.webhosts_array[0]
+            if webhost == "dreamhost":
+                w = d.webhosts_array[0]
+                c.company = w.company
+                c.logo_img = w.logo_img
+                c.plan = w.plan
+                c.price = w.price
+                c.disk_space = w.disk_space
+                c.bandwidth = w.bandwidth
+                c.control_panel = w.control_panel
+                c.domains = w.domains
 
-            elif self.request.GET["id"] == "2":
-                webhost = d.webhosts_array[1]
+            elif webhost == "hostgator":
+                w = d.webhosts_array[1]
+                c.company = w.company
+                c.logo_img = w.logo_img
+                c.plan = w.plan
+                c.price = w.price
+                c.disk_space = w.disk_space
+                c.bandwidth = w.bandwidth
+                c.control_panel = w.control_panel
+                c.domains = w.domains
 
-            elif self.request.GET["id"] == "3":
-                webhost = d.webhosts_array[2]
+            elif webhost == "site5":
+                w = d.webhosts_array[2]
+                c.company = w.company
+                c.logo_img = w.logo_img
+                c.plan = w.plan
+                c.price = w.price
+                c.disk_space = w.disk_space
+                c.bandwidth = w.bandwidth
+                c.control_panel = w.control_panel
+                c.domains = w.domains
 
-            elif self.request.GET["id"] == "4":
-                webhost = d.webhosts_array[3]
+            elif webhost == "godaddy":
+                w = d.webhosts_array[3]
+                c.company = w.company
+                c.logo_img = w.logo_img
+                c.plan = w.plan
+                c.price = w.price
+                c.disk_space = w.disk_space
+                c.bandwidth = w.bandwidth
+                c.control_panel = w.control_panel
+                c.domains = w.domains
 
-            elif self.request.GET['id'] == "5":
-                webhost = d.webhosts_array[4]
+            elif webhost == "siteground":
+                w = d.webhosts_array[4]
+                c.company = w.company
+                c.logo_img = w.logo_img
+                c.plan = w.plan
+                c.price = w.price
+                c.disk_space = w.disk_space
+                c.bandwidth = w.bandwidth
+                c.control_panel = w.control_panel
+                c.domains = w.domains
 
-            c.company = webhost.company
-            c.logo_img = webhost.logo_img
-            c.plan = webhost.plan
-            c.price = webhost.price
-            c.disk_space = webhost.disk_space
-            c.bandwidth = webhost.bandwidth
-            c.control_panel = webhost.control_panel
-            c.domains = webhost.domains
 
             # Show custom page using info above
             self.response.write(c.make_page())
@@ -47,8 +80,7 @@ class MainHandler(webapp2.RequestHandler):
         else:
             # Show front page if GET does not exist
             self.response.write(p.front_page())
-
-
+            # self.response.write("No GET found")
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
