@@ -13,37 +13,40 @@ class MainHandler(webapp2.RequestHandler):
 
         d = Data()
         c = ContentPage()
-
+        p = Page()
 
         if self.request.GET:
 
             if self.request.GET["id"] == "1":
-                webhost = d.dh
-                c.title = webhost.company
-                self.response.write(c.make_page())
+                webhost = d.webhosts_array[0]
 
             elif self.request.GET["id"] == "2":
-                webhost = d.hg
-                c.title = webhost.company
-                self.response.write(c.make_page())
+                webhost = d.webhosts_array[1]
 
             elif self.request.GET["id"] == "3":
-                webhost = d.s5
-                c.title = webhost.company
-                self.response.write(c.make_page())
+                webhost = d.webhosts_array[2]
 
             elif self.request.GET["id"] == "4":
-                webhost = d.gd
-                c.title = webhost.company
-                self.response.write(c.make_page())
+                webhost = d.webhosts_array[3]
 
             elif self.request.GET['id'] == "5":
-                webhost = d.sg
-                c.title = webhost.company
-                self.response.write(c.make_page())
+                webhost = d.webhosts_array[4]
+
+            c.company = webhost.company
+            c.logo_img = webhost.logo_img
+            c.plan = webhost.plan
+            c.price = webhost.price
+            c.disk_space = webhost.disk_space
+            c.bandwidth = webhost.bandwidth
+            c.control_panel = webhost.control_panel
+            c.domains = webhost.domains
+
+            # Show custom page using info above
+            self.response.write(c.make_page())
 
         else:
-            self.response.write(c.front_page())
+            # Show front page if GET does not exist
+            self.response.write(p.front_page())
 
 
 

@@ -16,7 +16,6 @@ class WebHost(object):
         self.bandwidth = ""
         self.control_panel = ""
         self.domains = ""
-        self.id = 0
 
 class Data(object):
     def __init__(self):
@@ -29,7 +28,6 @@ class Data(object):
         dh.bandwidth = "Unlimited"
         dh.control_panel = "DreamHost panel"
         dh.domains = "Unlimited"
-        dh.id = 1
 
         hg = WebHost()
         hg.company = "HostGator"
@@ -40,7 +38,6 @@ class Data(object):
         hg.bandwidth = "Unlimited"
         hg.control_panel = "cPanel"
         hg.domains = "Unlimited"
-        hg.id = 2
 
         s5 = WebHost()
         s5.company = "Site5"
@@ -51,7 +48,6 @@ class Data(object):
         s5.bandwidth = "Unlimited"
         s5.control_panel = "cPanel"
         s5.domains = "Unlimited"
-        s5.id = 3
 
         gd = WebHost()
         gd.company = "GoDaddy"
@@ -62,7 +58,6 @@ class Data(object):
         gd.bandwidth = "Unlimited"
         gd.control_panel = "cPanel"
         gd.domains = "Unlimited"
-        gd.id = 4
 
         sg = WebHost()
         sg.company = "SiteGround"
@@ -73,4 +68,5 @@ class Data(object):
         sg.bandwidth = "Suitable for ~ 25,000 Visits Monthly"
         sg.control_panel = "cPanel"
         sg.domains = "Unlimited"
-        sg.id = 5
+
+        self.webhosts_array = [dh, hg, s5, gd, sg]
