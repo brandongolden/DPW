@@ -109,8 +109,3 @@ class ContentPage(Page):
         a = self._header + self._webhost_body + self._footer
         a = a.format(**locals())  # Format all local variables
         return a
-
-
-
-
-
