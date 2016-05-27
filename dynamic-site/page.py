@@ -15,6 +15,7 @@ class Page(object):
         <head>
             <title>Web Hosting</title>
             <link rel="stylesheet" href="main.css">
+            <link href='https://fonts.googleapis.com/css?family=Cuprum:400,700' rel='stylesheet' type='text/css'>
         </head>
         <body>
         '''
