@@ -60,7 +60,7 @@ class Page(object):
         '''
 
     # merge header, body and footer to make front page that will show when there is no GET request
-    def front_page(self):
+    def make_page(self):
         return self._header + self._body + self._footer
 
 
@@ -104,6 +104,7 @@ class ContentPage(Page):
         '''
 
     # merge header, webhost_body and footer to make webpage for webhost
+    # Polymorphism happening here
     def make_page(self):
         a = self._header + self._webhost_body + self._footer
         a = a.format(**locals())  # Format all local variables

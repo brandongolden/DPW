@@ -91,7 +91,7 @@ class MainHandler(webapp2.RequestHandler):
 
         else:
             # Show front page if GET does not exist
-            self.response.write(p.front_page())
+            self.response.write(p.make_page())
             # self.response.write("No GET found")
 
 app = webapp2.WSGIApplication([
