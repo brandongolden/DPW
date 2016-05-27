@@ -69,7 +69,7 @@ class ContentPage(Page):
     def __init__(self):
         super(ContentPage, self).__init__()  # make super class
         self.company = ""
-        self.logo_img = ""
+
         self.plan = ""
         self.price = ""
         self.disk_space = ""

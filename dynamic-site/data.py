@@ -10,7 +10,6 @@ class WebHost(object):
     def __init__(self):
         # Attributes
         self.company = ""
-        self.logo_img = ""
         self.plan = ""
         self.price = ""
         self.disk_space = ""
@@ -22,7 +21,6 @@ class Data(object):
     def __init__(self):
         dh = WebHost()  # Create instance of WebHost
         dh.company = "DreamHost"
-        dh.logo_img = ""
         dh.plan = "Month-to-Month"
         dh.price = "$10.95/mo"
         dh.disk_space = "Unlimited"
@@ -32,7 +30,6 @@ class Data(object):
 
         hg = WebHost()  # Create instance of WebHost
         hg.company = "HostGator"
-        hg.logo_img = ""
         hg.plan = "Baby"
         hg.price = "$11.95/mo"
         hg.disk_space = "Unlimited"
@@ -42,7 +39,6 @@ class Data(object):
 
         s5 = WebHost()  # Create instance of WebHost
         s5.company = "Site5"
-        s5.logo_img = ""
         s5.plan = "hostPro"
         s5.price = "$10.95/mo"
         s5.disk_space = "Unlimited"
@@ -52,7 +48,6 @@ class Data(object):
 
         gd = WebHost()  # Create instance of WebHost
         gd.company = "GoDaddy"
-        gd.logo_img = ""
         gd.plan = "Deluxe"
         gd.price = "$9.99/mo"
         gd.disk_space = "Unlimited"
@@ -62,7 +57,6 @@ class Data(object):
 
         sg = WebHost()  # Create instance of WebHost
         sg.company = "SiteGround"
-        sg.logo_img = ""
         sg.plan = "GrowBig"
         sg.price = "$14.95/mo"
         sg.disk_space = "20GB Web Space"

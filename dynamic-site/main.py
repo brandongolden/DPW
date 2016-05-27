@@ -25,7 +25,6 @@ class MainHandler(webapp2.RequestHandler):
 
                 # Retrieve attributes that match webhost chosen in GET request
                 c.company = w.company
-                c.logo_img = w.logo_img
                 c.plan = w.plan
                 c.price = w.price
                 c.disk_space = w.disk_space
@@ -38,7 +37,6 @@ class MainHandler(webapp2.RequestHandler):
 
                 # Retrieve attributes that match webhost chosen in GET request
                 c.company = w.company
-                c.logo_img = w.logo_img
                 c.plan = w.plan
                 c.price = w.price
                 c.disk_space = w.disk_space
@@ -51,7 +49,6 @@ class MainHandler(webapp2.RequestHandler):
 
                 # Retrieve attributes that match webhost chosen in GET request
                 c.company = w.company
-                c.logo_img = w.logo_img
                 c.plan = w.plan
                 c.price = w.price
                 c.disk_space = w.disk_space
@@ -64,7 +61,6 @@ class MainHandler(webapp2.RequestHandler):
 
                 # Retrieve attributes that match webhost chosen in GET request
                 c.company = w.company
-                c.logo_img = w.logo_img
                 c.plan = w.plan
                 c.price = w.price
                 c.disk_space = w.disk_space
@@ -77,7 +73,6 @@ class MainHandler(webapp2.RequestHandler):
 
                 # Retrieve attributes that match webhost chosen in GET request
                 c.company = w.company
-                c.logo_img = w.logo_img
                 c.plan = w.plan
                 c.price = w.price
                 c.disk_space = w.disk_space
